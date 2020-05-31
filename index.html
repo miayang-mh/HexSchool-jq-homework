@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jq最終作業</title>
+    <link rel="stylesheet" href="./css/index-new.css">
+    <script src="https://kit.fontawesome.com/5ac491aa3a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- Swiper輪播等等效果css -->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <!-- 燈箱效果 -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <nav>
+            <div class="nav-main">
+                <a href="#"><img src="./img/最終作業_images/logo.png" alt="logo"></a>
+                <ul class="menu ">
+                    <li><a href="#">首頁</a></li>
+                    <!-- 下行的↓class="menu-product"寫再li裡還是a裡有差,範圍不一樣 -->
+                    <li class="menu-product"><a href="#">產品介紹</a>
+                        <ul class="menu-product-open">
+                            <li><a href="#">所有商品</a></li>
+                            <li><a href="#">實際應用</a></li>
+                            <li><a href="#">相關輔助商品</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="other-links">
+                <a class="fb-blue other-links-fb" href="#"><i
+                        class="fab fa-facebook-square fa-lg padding-r5"></i>粉絲團</a>
+                <a class="twitter-blue other-links-twitter" href="#"><i
+                        class="fab fa-twitter fa-lg padding-r5"></i>追隨我們</a>
+            </div>
+        </nav>
+        <header>
+            <div class="banner">
+                <div class="banner-text">
+                    <h1>六角學院<br>讓您奠定良好得前端基礎</h1>
+                </div>
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <!-- 其他必需的包裝器 -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <!-- 幻燈片 -->
+                        <div class="swiper-slide">
+                            <img src="./img/多頁式作業＿images/bg_QA.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/多頁式作業＿images/bg_index.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <img src="./img/多頁式作業＿images/bg_course.png" alt="">
+                        </div>
+                        <!-- 重複一次 -->
+                        <div class="swiper-slide">
+                            <img src="./img/多頁式作業＿images/bg_QA.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./img/多頁式作業＿images/bg_index.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <img src="./img/多頁式作業＿images/bg_course.png" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- 如果需要分頁 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </header>
+        <ul class="productList">
+            <li class="productList-html5">
+                <div class="imgheight">
+                    <a class="example-image-link" href="./img/最終作業_images/html.png" data-lightbox="example-1"
+                        data-title="HTML 5 基礎教學">
+                        <img class="example-image" src="./img/最終作業_images/html.png" alt="">
+                    </a>
+                </div>
+                <h2>Html 5基礎教學</h2>
+                <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實記的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法‧</p>
+
+            </li>
+            <li class="productList-response">
+
+                <div class="imgheight">
+                    <a class="example-image-link" href="./img/最終作業_images/rwd.png" data-lightbox="example-2"
+                        data-title="響應式網站設計">
+                        <img src="./img/最終作業_images/rwd.png" alt="">
+                    </a>
+                </div>
+
+                <h2>響應式網站設計</h2>
+                <p>響應式網站設計(Responsive webdesign)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+            </li>
+            <li class="productList-jquery">
+                <div class="imgheight">
+                    <a class="example-image-link" href="./img/最終作業_images/jQuery.png" data-lightbox="example-3"
+                        data-title="jQuery實戰教學">
+                        <img src="./img/最終作業_images/jQuery.png" alt="">
+                    </a>
+                </div>
+                <h2>jQuery實戰教學</h2>
+                <p>本課程有以下特色</p>
+                <ul>
+                    <li>瞭解變數的使用方法
+                    </li>
+                    <li>學習並操作DOM
+                    </li>
+                    <li>學習基本數學運算方法
+                    </li>
+                    <li>套件的操作及運用
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <article class="difference-subtitle">
+            <h3>線上及實體課程的差異</h3>
+            <table class="difference-table">
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>Hex School線上課程</th>
+                        <th>一般現上課程</th>
+                        <th>實體課程</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>費用</td>
+                        <td class="green">較低</td>
+                        <td class="green">較低</td>
+                        <td>較高</td>
+                    </tr>
+                    <tr>
+                        <td>學習效果</td>
+                        <td>一般</td>
+                        <td class="green">較低</td>
+                        <td class="green">很好</td>
+                    </tr>
+                    <tr>
+                        <td>Code review</td>
+                        <td class="green">有</td>
+                        <td>無</td>
+                        <td>不一定</td>
+                    </tr>
+                    <tr>
+                        <td>課程更新速度</td>
+                        <td class="green">普通</td>
+                        <td class="green">普通</td>
+                        <td>較慢</td>
+                    </tr>
+                    <tr>
+                        <td>多次復習</td>
+                        <td class="green">可</td>
+                        <td>可</td>
+                        <td>不可</td>
+                    </tr>
+                    <tr>
+                        <td>字幕</td>
+                        <td class="green">有</td>
+                        <td>不一定</td>
+                        <td>板書</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article class="class-problem">
+            <div class="ask-subtitle">對我們課程有興趣嗎?<br>歡迎留下您的資料</div>
+            <form class="classProblem-answer" action="#">
+                <textarea name="content"></textarea>
+                <div class="data">
+                    <div class="data-content">
+                        <div class="name">
+                            <label for="name">姓名</label>
+                            <input id="name" type="text" placeholder="請輸入姓名" name="name">
+                        </div>
+
+                        <div class="telephone-number">
+                            <label for="telephone-number">電話</label>
+                            <input id="telephone-number" type="text" placeholder="請輸入電話" name="telephone-number">
+                        </div>
+
+                        <div class="mail">
+                            <label for="mail">信箱</label>
+                            <input id="mail" type="text" placeholder="請輸入信箱" name="mail">
+                        </div>
+                    </div>
+                    <div class="submit-right">
+                        <input class="submit" type="submit" value="送出">
+                    </div>
+
+                </div>
+
+            </form>
+        </article>
+        <footer>
+            <a href="#"><img src="./img/最終作業_images/footerLogo.png" alt="頁尾logo"></a>
+
+            <ul>
+                <li>聯絡我們:<span class="red"> hexschool@gmail.com</span></li>
+                <li>電話:<span class="red">0999123456</span></li>
+            </ul>
+        </footer>
+        <div class="top">
+            <a href="#">
+                <i class="fas fa-angle-up fa-5x"></i>
+            </a>
+        </div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <!-- Swiper輪播等等效果jq -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

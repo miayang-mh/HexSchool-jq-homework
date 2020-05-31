@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----reset----- */
+*{
+    box-sizing: border-box;
+}
+
+.green {
+    color: #00cc99;
+}
+
+.red {
+    color: red;
+}
+
+.fb-blue {
+    color: #4460a0;
+}
+
+.twitter-blue {
+    color: #00aaec;
+}
+
+.padding-r5 {
+    padding-right: 5px;
+}
+a{
+    text-decoration: none;
+}
+
+.wrap {
+    width: 1002px;
+    margin: auto;
+    font-family: Microsoft JhengHei;
+}
+
+nav{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu li>a {
+    color: #00cc99;
+    padding: 10px;
+    margin: 0px 18px;
+}
+
+.menu a:hover {
+    border-bottom: 3px solid #00cc99;
+}
+
+.menu-product-open {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background: rgba(253, 253, 253, 0.938);
+    color: #ffffff;
+    margin: 15px 0px;
+    
+}
+.menu-product-open li {
+    margin: 5px 0px;
+    padding: 10px 0px;
+}
+
+.other-links{
+    background: #f6f6f6;
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px;
+}
+.other-links-fb {
+    padding: 0px 10px;
+}
+
+.other-links-twitter {
+    border-left: 1px solid #cccccc;
+    padding: 0px 10px;
+}
+
+
+ 
+.banner{
+    margin-bottom: 60PX;
+}
+.banner-text{
+    background: rgba(255, 255, 255, 0.185); 
+    position: absolute;
+    margin-top:200px ;
+    z-index: 10 ;
+    width: 1002px;
+}
+h1 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+    padding: 20px 20px;
+    
+}
+.swiper-container{
+    height: 560px;
+
+}
+
+.productList{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+
+
+.productList-html5, .productList-response, .productList-jquery {
+    width: 300px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.205);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgheight {
+    height: 150px;
+    display: flex;
+    align-items: center;
+} 
+
+
+.productList h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.productList p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.productList-jquery p {
+    text-align: left;
+    width: 100%;
+    
+}
+
+.productList-jquery ul {
+    list-style-type: disc;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ---- lightbox圖片跳出設定↓------ */
+.lb-outerContainer{
+    width: 250px !important;
+    height: 150px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----圖片跳出底下字設定↓------ */
+.lb-dataContainer{
+    width: 250px !important;
+}  
+
+.difference-subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.difference-table {
+    width: 840px;
+    margin-bottom: 60px;
+}
+.difference-table tr:hover{
+background: #8cb3a952;
+
+}
+.difference-table th, .difference-table td {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.difference-table th {
+    padding: 10px 20px;
+    background: #f7f7f7;
+    text-align: left;
+}
+
+.difference-table td {
+    padding: 10px 20px;
+}
+
+.class-problem {
+    background: linear-gradient(#00644b, #009772);
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* 漸層寫法 https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient*/
+
+.ask-subtitle {
+    margin: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.classProblem-answer{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.classProblem-answer>textarea{
+    width: 50%; 
+    border-radius: 5px;
+}
+.data{ 
+    margin:0px 0px 0px 20px;
+    width: 50%; 
+}
+
+.data-content label{
+    display: block;
+}
+.data-content{
+    display: flex;
+    flex-direction: column;
+}
+.data-content input{
+    width: 100%;
+    border-radius: 5px;
+    padding: 6px 0px 6px 12px;
+    margin: 5px 0px;
+    border: 1px solid #dededd;
+}
+
+.submit-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit{
+    width: 70px;
+    height: 35px;
+    background: #00cc99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* 鼠標變手指 */
+  
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    padding: 0px 20px;
+}
+
+.top a{
+    position: fixed;
+    bottom: 0px;
+    right: 150px;
+    color: rgb(175, 172, 172);
+}
